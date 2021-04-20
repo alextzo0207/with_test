@@ -30,3 +30,9 @@ for d in data:
 
 print('共有', len(good), '筆留言提到good')
 print(good[0])
+
+fast = [1 for d in data if 'good' in d]
+print(fast[0])
+
+bad = ['bad' in d for d in data]
+print(bad)
